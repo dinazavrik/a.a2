@@ -1,0 +1,63 @@
+
+@font-face {
+  font-family: 'Lucida Grande Bold';
+  src: url('/assets/fonts/Lucida Grande Bold.eot');
+  src: url('/assets/fonts/Lucida Grande Bold.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Lucida Grande Bold.woff2') format('woff2'), url('/assets/fonts/Lucida Grande Bold.woff') format('woff'), url('/assets/fonts/Lucida Grande Bold.svg#Lucida Grande Bold') format('svg');
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00BF;
+}
+
+@font-face {
+  font-family: 'Lucida Grande';
+  src: url('/assets/fonts/Lucida Grande.eot');
+  src: url('/assets/fonts/Lucida Grande.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Lucida Grande.woff2') format('woff2'), url('/assets/fonts/Lucida Grande.woff') format('woff'), url('/assets/fonts/Lucida Grande.svg#Lucida Grande') format('svg');
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00BF;
+}
+
+@font-face {
+  font-family: 'Futura Light BT';
+  src: url('/assets/fonts/T Light.eot');
+  src: url('/assets/fonts/T Light.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/T Light.woff2') format('woff2'), url('/assets/fonts/T Light.woff') format('woff'), url('/assets/fonts/T Light.svg#T Light') format('svg');
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00BF;
+}
+
+@font-face {
+  font-family: 'Futura Medium BT';
+  src: url('/assets/fonts/T Medium.eot');
+  src: url('/assets/fonts/T Medium.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/T Medium.woff2') format('woff2'), url('/assets/fonts/T Medium.woff') format('woff'), url('/assets/fonts/T Medium.svg#T Medium') format('svg');
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00BF;
+}
+
+@font-face {
+  font-family: 'Futura Md BT Bold';
+  src: url('/assets/fonts/Futura Md BT Bold.eot');
+  src: url('/assets/fonts/Futura Md BT Bold.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/Futura Md BT Bold.woff2') format('woff2'), url('/assets/fonts/Futura Md BT Bold.woff') format('woff'), url('/assets/fonts/Futura Md BT Bold.svg#Futura Md BT Bold') format('svg');
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00BF;
+}
+
+@font-face {
+  font-family: 'Edwardian Script ITC';
+  src: url('/assets/fonts/Edwardian Script ITC.eot');
+  src: url('/assets/fonts/Edwardian Script ITC?#iefix') format('embedded-opentype'), url('/assets/fonts/Edwardian Script ITC.woff2') format('woff2'), url('/assets/fonts/Edwardian Script ITC.woff') format('woff'), url('/assets/fonts/Edwardian Script ITC.svg#Edwardian') format('svg');
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00BF;
+}
+
+
+
+$logo-font: 'Edwardian Script ITC', sans-serif;
+$txt-font-bt: 'Lucida Grande Bold', sans-serif;
+$txt-font: 'Lucida Grande', sans-serif;
+$main-font-l: 'Futura Light BT', sans-serif;
+$main-font-m: 'Futura Medium BT', sans-serif;
+$main-font-bt: 'Futura Md BT Bold', sans-serif;

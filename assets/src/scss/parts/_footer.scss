@@ -1,0 +1,147 @@
+.footer{
+  padding-top: rem-calc(51);
+  @include breakpoint(xs){
+    padding-top: rem-calc(20);
+  }
+  &__row{
+    @include flex-grid-column(12, 15);
+    @include flex-grid-row;
+    max-width: rem-calc(1143);
+    justify-content: space-between;
+    @include breakpoint(xs){
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  &__contacts{
+    @include breakpoint(xs){
+      padding-bottom: rem-calc(20);
+    }
+  }
+  &__contacts-title{
+    font-family: $txt-font;
+    font-weight: 700;
+    color: $grey-color;
+    font-size: rem-calc(17);
+    text-transform: uppercase;
+  }
+  &__contacts-txt{
+    font-family: $txt-font;
+    font-weight: 400;
+    color: #706f6f;
+    font-size: rem-calc(17);
+    text-transform: uppercase;
+    &--str{
+      color: #1c285b;
+    }
+    &--ph:before{
+      content: "\f095";
+      font-family: 'FontAwesome';
+      font-size: rem-calc(17);
+      width: rem-calc(17);
+      height: rem-calc(17);
+      color: #706f6f;
+    }
+    &--em:before{
+      content: "\f0e0";
+      font-family: 'FontAwesome';
+      font-size: rem-calc(17);
+      width: rem-calc(17);
+      height: rem-calc(17);
+      color: #706f6f;
+    }
+  }
+  &__contacts-txt:hover{
+    cursor: pointer;
+    animation-name: tada;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+  }
+  &__nav-block{
+    @include breakpoint(xs){
+      padding-bottom: rem-calc(20);
+    }
+  }
+  &__nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__nav-title{
+    font-family: $txt-font;
+    font-weight: 700;
+    color: $grey-color;
+    font-size: rem-calc(17);
+    text-transform: uppercase;
+  }
+  &__nav-menu{
+    padding-left: 0;
+    padding-right: rem-calc(30);
+    margin: 0;
+    list-style: none;
+    @include breakpoint(xs){
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+  &__nav-item{
+    margin-bottom: rem-calc(13);
+  }
+  &__nav-link{
+    font-family: $txt-font;
+    font-weight: 400;
+    color: #706f6f;
+    font-size: rem-calc(17);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  &__nav-link:hover{
+    color: $gold-color;
+  }
+  &__form-title{
+    color: $grey-color;
+    font-family: $txt-font;
+    font-size: rem-calc(17);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__form-sub-title{
+    color: #706f6f;
+    font-family: $txt-font;
+    font-size: rem-calc(13);
+    font-weight: 400;
+  }
+  &__form-input{
+    padding: rem-calc(14) rem-calc(18);
+    color: #706f6f;
+    font-family: $txt-font;
+    font-size: rem-calc(13);
+    font-weight: 400;
+  }
+  &__form-inp:after{
+    content: "\f105";
+    font-family: 'FontAwesome';
+    font-size: rem-calc(17);
+    width: rem-calc(17);
+    height: rem-calc(17);
+    color: #706f6f;
+    border: 1px solid #706f6f;
+    padding: rem-calc(12.5) rem-calc(17);
+  }
+  &__end{
+    margin-top: rem-calc(60);
+    padding-top: rem-calc(20);
+    background-color: #f4f3f3;
+  }
+  &__end-txt{
+    color: $grey-color;
+    font-family: $txt-font;
+    font-size: rem-calc(11);
+    font-weight: 400;
+    @include breakpoint(xs){
+      width: 100%;
+    }
+  }
+}

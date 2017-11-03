@@ -1,0 +1,166 @@
+.header{
+  padding-top: rem-calc(16);
+  &__row{
+    @include flex-grid-column(12, 15);
+    @include flex-grid-row;
+    max-width: rem-calc(1143);
+  }
+  &__logo{
+    @include flex-grid-column(4);
+    margin-bottom: rem-calc(46);
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+      text-align: center;
+    }
+  }
+  &__logo-title{
+    color: $gold-color;
+    font-family: $logo-font;
+    font-size: rem-calc(71);
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+  &__logo-sub-title{
+    color: $blue-color;
+    font-family: $main-font-l;
+    font-size: rem-calc(23);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    letter-spacing: rem-calc(1.82);
+    padding-left: rem-calc(24);
+    font-weight: 400;
+  }
+  &__inform{
+    @include flex-grid-column(8);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  &__inform-title{
+    color: $blue-color;
+    font-family: $txt-font;
+    font-size: rem-calc(18);
+    font-weight: 400;
+    padding-right: rem-calc(10);
+    @include breakpoint(xs){
+      padding-right: 0;
+    }
+  }
+  &__inform-sub-title{
+    color: $blue-color;
+    font-family: $main-font-bt;
+    font-size: rem-calc(26);
+    font-weight: 500;
+    padding-right: rem-calc(20);
+    @include breakpoint(xs){
+      padding-right: 0;
+    }
+  }
+  &__inform-sub-title:hover{
+    cursor: pointer;
+    animation-name: tada;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+  }
+  &__inform-btn{
+    color: $white-color;
+    font-family: $main-font-bt;
+    font-size: rem-calc(14);
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: $blue-color;
+    border: none;
+    padding: rem-calc(10) rem-calc(15);
+    transition: all 0.3s ease;
+  }
+  &__inform-btn:hover{
+    cursor: pointer;
+    color: $gold-color;
+  }
+  &__menu{
+    @include flex-grid-column(12);
+    position: relative;
+  }
+  &__line{
+    margin-top: 0;
+    &--mg1{
+      margin-bottom: rem-calc(6);
+    }
+    &--mg2{
+      margin-bottom: rem-calc(24);
+    }
+  }
+  &__bg{
+    @include bg-img('img/head-bg.png');
+    height: rem-calc(238);
+  }
+}
+
+.menu{
+  display: flex;
+  flex-flow: row wrap;
+  align-self: center;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 0;
+  @include breakpoint(xs){
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  &--drop-first{
+    display: none;
+    position: absolute;
+    background-color: $blue-color;
+    padding: rem-calc(23);
+  }
+  &--drop-second{
+    display: none;
+    position: relative;
+  }
+  &__item{
+    padding-left: rem-calc(15);
+  }
+  &__item-img{
+    position: absolute;
+    bottom: rem-calc(-69);
+    right: rem-calc(-166);
+  }
+  &__link{
+    color: $grey-color;
+    font-family: $main-font-l;
+    font-size: rem-calc(14);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &--wh{
+      color: $white-color;
+    }
+    &--in-active{
+      border-top: 6px solid $blue-color;
+      padding-top: rem-calc(31.5);
+      @include breakpoint(xs){
+        border-top: none;
+        padding-top: 0;
+      }
+    }
+  }
+  &__link:hover{
+    color: $gold-color;
+  }
+}
+
+nav ul li:hover > ul {
+  display:inherit;
+  @include breakpoint(xs){
+    display: none;
+  }
+}

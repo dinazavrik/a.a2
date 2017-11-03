@@ -1,0 +1,128 @@
+.title-img{
+  padding-top: rem-calc(66);
+  @include breakpoint(xs){
+    padding-top: rem-calc(20);
+  }
+  &__row{
+    @include flex-grid-column(12, 15);
+    @include flex-grid-row;
+    max-width: rem-calc(1143);
+  }
+  &__block-first{
+    @include flex-grid-column(4);
+    padding-right: rem-calc(21);
+    position: relative;
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+      padding-right: 0;
+      margin-bottom: rem-calc(20);
+    }
+  }
+  &__block-second{
+    @include flex-grid-column(4);
+    padding-right: rem-calc(21);
+    position: relative;
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+      padding-right: 0;
+      margin-bottom: rem-calc(20);
+    }
+  }
+  &__block-third{
+    @include flex-grid-column(4);
+    position: relative;
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+    }
+  }
+  &__image{
+    position: relative;
+    &--first{
+      @include bg-img('img/img1.png');
+      height: rem-calc(253);
+    }
+    &--second{
+      @include bg-img('img/img2.png');
+      height: rem-calc(253);
+    }
+    &--third{
+      @include bg-img('img/img3.png');
+      height: rem-calc(253);
+    }
+  }
+  &__img{
+    z-index: 1;
+  }
+  &__image:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #5f6887;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &__image:hover:before{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  &__block-content{
+    width: 90%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+  &__image:hover .title-img__block-content {
+    opacity: 1;
+    cursor: pointer;
+  }
+  &__block-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: rem-calc(43);
+  }
+  &__block-content-img{
+    padding-right: rem-calc(18);
+  }
+  &__block-content-txt{
+    color: $white-color;
+    font-family: $txt-font;
+    font-size: rem-calc(13);
+    font-weight: 400;
+  }
+  &__block-content-inp{
+    color: $white-color;
+    font-family: $main-font-bt;
+    font-size: rem-calc(14);
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid $white-color;
+    padding: rem-calc(12) rem-calc(10);
+    transition: all 0.3s ease;
+  }
+  &__block-content-inp:hover{
+    cursor: pointer;
+    color: $gold-color;
+  }
+  &__block-content-btn{
+    text-align: center;
+  }
+  &__line{
+    margin-top: 0;
+  }
+  &__title{
+    text-align: center;
+    color: $grey-color;
+    font-family: $main-font-m;
+    font-size: rem-calc(18);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: rem-calc(20);
+  }
+}

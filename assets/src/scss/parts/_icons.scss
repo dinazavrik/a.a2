@@ -1,0 +1,42 @@
+.icons{
+  padding-top: rem-calc(74);
+  @include breakpoint(xs){
+    padding-top: rem-calc(30);
+  }
+  &__row{
+    @include flex-grid-column(12, 15);
+    @include flex-grid-row;
+    max-width: rem-calc(1143);
+    justify-content: center;
+    position: relative;
+  }
+  &__line{
+    margin-top: 0;
+  }
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: $white-color;
+  position: absolute;
+  top: rem-calc(-30);
+  &:first-child{
+    padding-left: rem-calc(18);
+  }
+  &__item{
+    margin-right: rem-calc(18);
+  }
+  &__link{
+    font-size: rem-calc(21);
+    color: #5a5a5a;
+    transition: opacity 0.3s ease;
+  }
+  &__link:hover{
+    color: #1d275a;
+  }
+}

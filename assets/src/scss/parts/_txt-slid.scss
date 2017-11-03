@@ -1,0 +1,71 @@
+.txt-slid{
+  &__row{
+    @include flex-grid-column(12, 15);
+    @include flex-grid-row;
+    max-width: rem-calc(1143);
+  }
+  &__col{
+    @include bg-img('img/bg-blue.png');
+    margin-bottom: rem-calc(66);
+    @include breakpoint(xs){
+      margin-bottom: rem-calc(20);
+    }
+  }
+  &__title{
+    margin-bottom: 0;
+    color: $white-color;
+    font-family: $main-font-bt;
+    font-size: rem-calc(35);
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &__first-col{
+    @include flex-grid-column(6);
+    padding-right: rem-calc(51);
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+      padding-right: 0;
+      margin-bottom: rem-calc(20);
+    }
+  }
+  &__second-col{
+    @include flex-grid-column(6);
+    margin-top: rem-calc(-180);
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+      margin-top: 0;
+    }
+  }
+  &__text{
+    color: $blue-color;
+    font-family: $main-font-l;
+    font-size: rem-calc(13);
+    font-weight: 400;
+    margin-bottom: rem-calc(26);
+    &--strong{
+      font-weight: 700;
+      margin-bottom: 0;
+      font-family: $main-font-m;
+    }
+  }
+  &__slider-img{
+    width: 100%;
+    height: 100%;
+  }
+  &__slider-cont{
+    height: 100%;
+    border: 6px solid white;
+  }
+}
+
+.txt-slid__slider .slick-dots{
+  text-align: end;
+}
+
+.txt-slid__slider .slick-dots li button:before{
+  font-size: rem-calc(10);
+}
+
+.txt-slid__slider .slick-dots li.slick-active button:before{
+  color: $blue-color;
+}
